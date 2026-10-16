@@ -1,0 +1,32 @@
+*{box-sizing:border-box;margin:0;padding:0;font-family:Segoe UI,Arial,sans-serif}
+:root{--azul:#0b1f3a;--azul2:#13305a;--ouro:#d4a017;--bg:#eef1f6;--txt:#1b2533}
+body{background:var(--bg);color:var(--txt)}
+.hidden{display:none!important}
+.login{min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#061226,#13305a)}
+.card{background:#fff;border-radius:12px;padding:28px;box-shadow:0 10px 30px #0003;display:flex;flex-direction:column;gap:12px;min-width:320px}
+.login .card{text-align:center;border-top:5px solid var(--ouro)}
+.brasao{font-size:48px;color:var(--ouro)}
+h1{color:var(--azul);letter-spacing:2px}.sub{color:#667}
+input,select,textarea{padding:10px;border:1px solid #ccd;border-radius:6px;font-size:14px;width:100%}
+button{background:var(--azul);color:#fff;border:0;padding:10px 16px;border-radius:6px;cursor:pointer;font-weight:600}
+button:hover{background:var(--azul2)}button.sec{background:#889}button.del{background:#b3261e;padding:6px 10px}
+.erro{color:#b3261e;font-size:13px}
+#app{display:flex;min-height:100vh}
+aside{width:230px;background:var(--azul);color:#fff;display:flex;flex-direction:column}
+.logo{padding:20px;border-bottom:1px solid #fff2;color:var(--ouro)}.logo b{color:#fff}.logo small{display:block;color:#aab;margin-top:4px}
+nav{flex:1;display:flex;flex-direction:column;padding:10px 0}
+nav a{padding:12px 20px;cursor:pointer;color:#cdd}nav a:hover,nav a.ativo{background:var(--azul2);color:#fff;border-left:4px solid var(--ouro)}
+.me{padding:16px;border-top:1px solid #fff2;display:flex;flex-direction:column;gap:6px}.me small{color:#aab}
+main{flex:1;padding:28px;overflow:auto}
+.topo{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px;margin-bottom:24px}
+.stat{background:#fff;padding:20px;border-radius:10px;border-left:5px solid var(--ouro);box-shadow:0 2px 8px #0001}
+.stat b{font-size:30px;color:var(--azul);display:block}
+table{width:100%;background:#fff;border-collapse:collapse;border-radius:10px;overflow:hidden;box-shadow:0 2px 8px #0001}
+th{background:var(--azul);color:#fff;text-align:left;padding:10px;font-size:13px}td{padding:10px;border-bottom:1px solid #eee;font-size:14px}
+.tag{padding:3px 8px;border-radius:10px;font-size:12px;background:#e3e8f0}
+.tag.Ativo,.tag.Procurado{background:#fde2e1;color:#b3261e}.tag.Capturado,.tag.Cumprido,.tag.Encerrada{background:#dff5e3;color:#1e7b34}
+.modal{position:fixed;inset:0;background:#0008;display:flex;align-items:center;justify-content:center}
+.modal .card{max-height:90vh;overflow:auto;width:440px}
+.box{background:#fff;padding:18px;border-radius:10px}.box li{list-style:none;padding:6px 0;border-bottom:1px solid #eee;font-size:14px}
+.busca{max-width:260px}

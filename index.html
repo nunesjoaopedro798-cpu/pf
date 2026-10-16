@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Polícia Federal - Painel</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="login" class="login">
+  <form id="fLogin" class="card">
+    <div class="brasao">★</div>
+    <h1>POLÍCIA FEDERAL</h1><p class="sub" id="cidadeLogin">Sistema Integrado</p>
+    <input name="email" type="email" placeholder="E-mail" required><input name="pass" type="password" placeholder="Senha" required>
+    <button>Entrar</button><p id="erroLogin" class="erro"></p>
+  </form>
+</div>
+<div id="app" class="hidden">
+  <aside>
+    <div class="logo">★ <b>POLÍCIA FEDERAL</b><small id="cidade"></small></div>
+    <nav>
+      <a data-p="dash" class="ativo">📊 Painel</a>
+      <a data-p="ocorrencias">📝 Ocorrências</a>
+      <a data-p="procurados">🚨 Procurados</a>
+      <a data-p="mandados">⚖️ Mandados</a>
+      <a data-p="viaturas">🚓 Viaturas</a>
+      <a data-p="agentes">👮 Agentes</a>
+    </nav>
+    <div class="me"><span id="meNome"></span><small id="meCargo"></small><button id="sair">Sair</button></div>
+  </aside>
+  <main id="main"></main>
+</div>
+<div id="modal" class="modal hidden"><form id="fModal" class="card"></form></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body></html>
