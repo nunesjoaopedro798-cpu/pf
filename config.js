@@ -1,6 +1,6 @@
 // ====== CONFIGURE AQUI ======
 window.PF_CONFIG = {
-  CIDADE: "Sua Cidade RP",
-  SUPABASE_URL: "https://SEU-PROJETO.supabase.co",
-  SUPABASE_ANON_KEY: "SUA_ANON_KEY"
+  CIDADE: "METROPOLE ROLEPLAY",
+  SUPABASE_URL: "https://ztrgfefzcugnpgnugbsy.supabase.co",
+  SUPABASE_ANON_KEY: "sb_publishable_cucnJ8SisBieMNkClu-_GQ_HW23NF5Z"
 };
